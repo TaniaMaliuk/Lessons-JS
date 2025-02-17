@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Результат обчислення:</h3>
+
+<script>
+    if(confirm(`Почати тестування`)){
+    const num1 = parseFloat( prompt(`Bведіть перше число`))
+    const num2 = parseFloat( prompt(`Bведіть друге число`))
+
+    let sum = num1 + num2;
+    let multiple = num1 * num2;
+    let division = (num1 / num2).toFixed(2)
+
+    document.write(`сума: ${sum} <br>`)
+    document.write(`добуток: ${multiple} <br>`)
+    document.write(`частка: ${division} <br>`)
+    }
+</script>
+
+    <a href="../index.html">назад</a>
+</body>
+</html>
+

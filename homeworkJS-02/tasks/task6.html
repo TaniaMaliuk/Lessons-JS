@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    if(confirm(`Почати тестування`)){
+        const product1Quantity = parseFloat(prompt(`Молоко к-ть:`))
+        const product1Price = parseFloat(prompt(`Молоко ціна:`))
+        const product2Quantity = parseFloat(prompt(`Чай к-ть:`))
+        const product2Price = parseFloat(prompt(`Чай ціна:`))
+        const product3Quantity = parseFloat(prompt(`Цукор к-ть:`))
+        const product3Price = parseFloat(prompt(`Цукор ціна:`))
+
+        const product1Сost = product1Quantity * product1Price
+        const product2Сost = product2Quantity * product2Price
+        const product3Сost = product3Quantity * product3Price
+
+        const allOfPrice = (product1Сost + product2Сost + product3Сost).toFixed(2)
+
+        document.write(`молоко x${product1Quantity} __${product1Сost}<br>
+        чай x${product2Quantity} _____${product2Сost}<br>
+        цукор x${product3Quantity} ___${product3Сost}<br>
+        _______________<br>
+        сума до сплати: ${allOfPrice}`)
+    }
+    </script>
+    <br>
+     <a href="../index.html">назад</a>
+</body>
+</html>

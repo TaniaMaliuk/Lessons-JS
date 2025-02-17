@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(confirm(`Почати тестування`)){
+        const productPrice = parseFloat(prompt(`Введіть вартість товару`)).toFixed(2)
+        const quantityProduct = parseInt(prompt(`Введіть кількість товару`))
+
+        let totalCost = productPrice * quantityProduct
+        let tax = ((totalCost / 100) * 5).toFixed(2)
+
+        document.write(`Загальна вартість товару становить - ${totalCost} грн<br>ПДВ 5% - ${tax} грн`)
+        }
+    </script>
+    <br>
+    <a href="../index.html">назад</a>
+</body>
+</html>
+

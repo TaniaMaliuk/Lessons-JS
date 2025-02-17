@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Рішення:</p>
+<script>
+    if(confirm(`Почати тестування`)){
+    const a = parseFloat(prompt("Введіть значеня a"))
+    const b = parseFloat(prompt("Введіть значеня b"))
+    const c = parseFloat(prompt("Введіть значеня c"))
+
+    let S1 = a + 12 + b;
+    let S2 = Math.sqrt((a + b) / (2 * a)).toFixed(2)
+    let S3 = Math.cbrt((a + b) * c).toFixed(2)
+    let S4 = Math.sin(a / -b).toFixed(2)
+
+    document.write(
+        `S1 = ${S1}<br>
+        S2 = ${S2}<br>
+        S3 = ${S3}<br>
+        S4 = ${S4}<br>`
+    )
+    }
+</script>
+    <a href="../index.html">назад</a>
+</body>
+</html>
