@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    if(confirm(`Почати тестування`)){
+    const firstChildName = prompt(`Введіть ім"я дитини`,`Катя`)
+    const amoutCandy1 = parseInt(prompt(`Скільки ${firstChildName} має цукерок?`))
+    const secondChildName = prompt(`Введіть ім"я дитини`,`Діана`)
+    const amoutCandy2 = parseInt(prompt(`Скільки ${secondChildName} має цукерок?`))
+
+    if (amoutCandy1 > amoutCandy2)
+    document.write (`${firstChildName} має більшу кількісь цукерок`)
+    else if (amoutCandy1 < amoutCandy2)
+    document.write (`${secondChildName} має більшу кількісь цукерок`)
+    else 
+    document.write (`${firstChildName} і ${secondChildName} мають однакову кількісь цукерок`)
+    }
+</script>
+    <br>
+    <a href="../index.html">назад</a>
+</body>
+</html>

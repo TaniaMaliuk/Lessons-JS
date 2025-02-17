@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(confirm(`Почати тестування`)){
+        const price = parseInt(prompt(`Введіть ціну товару`))
+        const money = parseInt(prompt(`Скільки ви маєте коштів?`))
+        let remainder = (price - money).toFixed(2)
+
+        if (price>money)
+        document.write(`Вибачте ми не можемо продати цей товар`)
+        else if (money - price >= 4)
+        document.write(`Дякуємо за покупку!<br> Ваша решта ${remainder}грн<br> Можливо ви бажаєте придбати лотерею за 4 гривні?`)
+        else 
+        document.write(`Дякуємо за покупку!<br> Ваша решта ${remainder}грн`)
+        }
+        </script>
+    <br>
+    <a href="../index.html">назад</a>   
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(confirm(`Почати тестування`)){
+        let typeOfLicense = prompt(`Введіть категорію водійського посвідчення (А,B або С)`)
+        let result
+        switch (typeOfLicense.toUpperCase()){
+            case `A`: 
+            result = `Вам дозволено керувати мотоциклами`
+            break;
+            case `B`:
+            result =`Вам дозволено керувати легковими автомобілями`
+            break;
+            case `C`:
+            result =`Вам дозволено керувати вантажними автомобілями`
+            break;
+            default: result =`помилка`
+            break;
+        }
+        document.write (`${ result }`)
+    }
+    </script>
+    <br>
+    <a href="../index.html">назад</a>
+</body>
+</html>

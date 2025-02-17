@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(confirm(`Почати тестування`)){
+        let number = parseInt(prompt(`Вгадай число від 1 до 5`))
+        let min = 1;
+        let max = 5;
+        const randNumber = min + Math.floor( Math.random() * (max - min +1));
+
+    if (randNumber === number)
+        document.write (`Вітаю! Ви вгадали з першої спроби`)
+    else{ 
+        number = parseInt(prompt(`Спробуй ще раз (підказка: ${randNumber})`))
+        if (randNumber === number)
+        document.write (`Вітаю! Ви вгадали з другої спроби!`)
+        else 
+        document.write (`Ви не вгадали. Число було ${randNumber}`)
+    }
+}
+    </script>
+    <br>
+    <a href="../index.html">назад</a>
+</body>
+</html>
+
+
+
+
+ 

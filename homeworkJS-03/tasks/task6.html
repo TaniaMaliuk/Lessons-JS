@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(confirm(`Почати тестування`)){
+        let numberDay = prompt(`Введіть прядковий номер дня тижня`)
+        let nameDay
+
+        switch (numberDay){
+            case `1`: nameDay = `понеділок`
+            break;
+            case `2`: nameDay = `вівторок`
+            break;
+            case `3`: nameDay = `середа`
+            break;
+            case `4`: nameDay = `четвер`
+            break;
+            case `5`: nameDay = `п"ятниця`
+            break;
+            case `6`: nameDay = `субота`
+            break;
+            case `7`: nameDay = `неділя`
+            break;
+            default: nameDay = `неіснуючий день`
+            break;
+        }
+        document.write (`Ви ввели номер дня "${nameDay}"`)
+    }
+    </script>
+    <br>
+     <a href="../index.html">назад</a>
+</body>
+</html>
