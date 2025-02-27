@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(confirm(`Почати тестування`)){
+            function cmInInch(centimeters){
+                const inchInCm = 0.393700787
+                return centimeters*inchInCm
+            }
+
+            function kgInPound(kilogram){
+                const poundInKg =  2.20462
+                return kilogram*poundInKg
+            }
+
+            function kmInMile(kilometers){
+                const mileInKm =  0.621371192
+                return kilometers*mileInKm
+            }
+
+            let centimeters = parseFloat(prompt(`Введіть сантиметри`))
+            let kilogram = parseFloat(prompt(`Введіть кілограми`))
+            let kilometers = parseFloat(prompt(`Введіть кілометри`))
+
+            document.write(`${centimeters}см = ${cmInInch(centimeters).toFixed(2)} дюйм <br> 
+             ${kilogram}кг = ${kgInPound(kilogram).toFixed(2)} фунтів <br> 
+            ${kilometers}км = ${kmInMile(kilometers).toFixed(2)} миль`)
+        }
+    </script>
+    <br>
+    <a href="../index.html">назад</a>
+</body>
+</html>
+
+  

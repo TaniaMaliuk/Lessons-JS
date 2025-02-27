@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body> 
+
+
+    <script>
+        if(confirm(`Почати тестування`)){
+
+            function createBanner(link, img, title, description){
+                 return `
+                    <a class="banner" 
+                    href="${link} " target="_blank">
+                        <img src="${img}" alt="#">
+                        <div class="iner-banner">
+                            <h3 class="title">${title}</h3>
+                            <p class="description">${description}</p>
+                        </div>
+                     </a>`}
+
+            let link = "https://multiplex.ua"
+            let img = "../img/banner.jpg"
+            let title = "Квитики у продажу"
+            let description = "16+"
+
+            document.write(`${createBanner(link, img, title, description)}`)
+
+
+        }
+    </script>
+    <br>
+    <a href="../index.html">назад</a>
+</body>
+</html>
+
+
+
+
+  
+
+  
+
+  
+
+
+

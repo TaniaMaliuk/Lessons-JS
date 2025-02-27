@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(confirm(`Почати тестування`)){
+            function sum (a,b,c,d){
+                return a+b+c+d
+            }
+            function product (a,b,c,d){
+                return a*b*c*d
+            }
+            function arithmeticMean (a,b,c,d){
+                return (a+b+c+d)/4
+            }
+            function minValue (a,b,c,d){
+                return Math.min(a,b,c,d)
+            }
+
+            let a = parseFloat(prompt(`Введіть перше число `))
+            let b = parseFloat(prompt(`Введіть друге число `))
+            let c = parseFloat(prompt(`Введіть третє число `))
+            let d = parseFloat(prompt(`Введіть четверте число `))
+
+            document.write(`сума - ${sum (a,b,c,d)}<br> добуток - ${product (a,b,c,d)}<br> середнє арифметичне - ${arithmeticMean (a,b,c,d)}<br> мінімальне значення - ${minValue (a,b,c,d)}`)
+        }
+    </script>
+    <br>
+    <a href="../index.html">назад</a>
+</body>
+</html>
+
+

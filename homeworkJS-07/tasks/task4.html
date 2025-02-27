@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=і, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(confirm(`Почати тестування`)){
+            function getNumEvenPositiveMoreAhundred(a, b, c) {
+        let evenCount=0
+        if (a % 2 === 0) evenCount++
+        if (b % 2 === 0) evenCount++
+        if (c % 2 === 0) evenCount++
+
+        let positiveCount=0
+        if (a > 0) positiveCount++
+        if (b > 0) positiveCount++
+        if (c > 0) positiveCount++
+
+        let moreAhundredCount=0 
+        if (a > 100) moreAhundredCount++
+        if (b > 100) moreAhundredCount++
+        if (c > 100) moreAhundredCount++
+
+        return {
+            evenCount,
+            positiveCount,
+            moreAhundredCount}
+        }
+    let a = parseInt(prompt("Введіть перше число", "130"))
+    let b = parseInt(prompt("Введіть друге число", "55"))
+    let c = parseInt(prompt("Введіть третє число", "-10"))
+
+    let result =  getNumEvenPositiveMoreAhundred(a, b, c) 
+    document.write(`кількість парних - ${result.evenCount}<br>
+                    кількість додатних - ${result.positiveCount}<br>
+                    кількість більших за 100 - ${result.moreAhundredCount}`)
+
+        }
+    </script>
+    <br>
+    <a href="../index.html">назад</a>
+</body>
+</html>
+
+
+
+
+
+

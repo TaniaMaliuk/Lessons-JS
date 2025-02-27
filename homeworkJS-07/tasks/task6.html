@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         if (confirm('Почати тестування?')) {
+// 	function createTable (rows, cols, message) {
+// 		let table = ``
+// 		table += `<table>`
+// 		for (let i = 1; i <= rows; i++) {
+// 			table += `<tr>`
+
+// 			for (let j = 1; j <= cols; j++) {
+// 				table += `<td> <a class="message">${message} </a></td>`
+// 			}
+// 			table += `</tr>`
+// 		}
+// 		table += `</table>`
+// 		return table
+// 	}
+
+// 	const rows = parseInt(prompt('Введіть бажану кількість рядків', '3'))
+// 	const cols = parseInt(prompt('Введіть бажану кількість колонок', '3'))
+// 	const message = prompt('Введіть контент, яким бажаєте заповнити таблицю', 'hello kitty')
+	
+// 	document.write(createTable(rows, cols, message))
+// }
+    if(confirm(`Почати тестування`)){
+
+        function createTable (rows, columns, fill) {
+            let table = ``
+            table += `<table style="border:1px solid">`
+            for( let row = 1; row <= rows; row++){
+                table +=`<tr>`
+
+                for ( let column = 1; column <= columns; column++){
+                    table +=`<td style="border:0.5px solid">${fill}</td>`
+                }
+                    table +=`</tr>`
+            }
+            table +=`</table>`
+            return table
+        }
+        let rows = parseInt(prompt(`Введіть кількість рядків таблиці`))
+        let columns = parseInt(prompt(`Введіть кількість стовбців тіблиці`))
+        let fill = prompt(`Чим заповнити?`,`;-)`)
+
+        document.write(`${createTable (rows, columns, fill)}`)
+}
+    </script>
+    <br>
+     <a href="../index.html">назад</a>
+</body>
+</html>
+
+
+
+
+
+

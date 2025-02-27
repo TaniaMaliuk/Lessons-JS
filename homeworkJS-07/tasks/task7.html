@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        if(confirm(`Почати тестування`)){
+ 
+function showRandomImage(image1, image2, image3, image4) {
+   let randomIndex =  1 + Math.floor(Math.random() * 4) // 
+   switch (randomIndex) {
+      case 1:
+         return image1;
+         break;
+      case 2:
+         return image2;
+         break;
+      case 3:
+         return image3;
+         break;
+      case 4:
+         return image4;
+         break;
+      }
+
+}
+    let image1 = `<img src="../img/img1.jpeg" alt="#">`
+    let image2 = `<img src="../img/img2.jpeg" alt="#">`
+    let image3 = `<img src="../img/img3.jpeg" alt="#">`
+    let image4 = `<img src="../img/img4.jpeg" alt="#">`
+
+      document.write(`Випадкове зображення:<br> ${showRandomImage(image1, image2, image3, image4)}`)
+        }
+    </script>
+    <br>
+    <a href="../index.html">назад</a>
+</body>
+</html>
